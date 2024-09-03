@@ -6,7 +6,7 @@ RUN apt-get update -y && \
 
 FROM python:3.8.12
 # copy the requirements file into the image
-WORKDIR /app
+# WORKDIR /app
 COPY requirements.txt requirements.txt
 RUN pip3 install -r requirements.txt
 COPY . .
